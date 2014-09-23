@@ -1,0 +1,7 @@
+<p>
+  <strong>Name:</strong>
+  <%= @appointment.name %>
+  <%= @appointment.balance %>
+</p>
+
+<%= link_to 'Back', appointments_path %>

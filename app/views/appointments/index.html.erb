@@ -1,0 +1,17 @@
+<h1>Listing appointments</h1>
+
+<%= link_to 'Create appointments', new_appointment_path %><br>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+  <%= @appointments.each do |appointment| %>
+    <tr>
+      <td> <%= appointment.name %> </td>
+      <td> <%= link_to 'Show', appointment_path(appointment) %> </td>
+      <td> <%= link_to 'Destroy', appointment_path(appointment), method: :delete, data: {confirm: 'Are you sure?'} %> </td>
+    </tr>
+  <% end %>
+</table>

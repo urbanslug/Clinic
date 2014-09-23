@@ -1,0 +1,12 @@
+<h1>Invoice</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @appointment.name %>
+</p>
+<p>
+  <strong>Payable:</strong>
+  <%= @appointment.balance %>
+</p>
+
+<%= link_to 'Back', appointments_path %>
